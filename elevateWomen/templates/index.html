@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block main%}
+
+<!-- Intro Carousel -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/Project1.jpeg" class="img" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="title">Spreading Hope. </h1>
+            <p>Working with schools in the East Highlands of Zimbabwe, we educate and provide for young Women in Zimbabwe.</p>
+            <p><a class="btn btn-lg btn-primary" href="/our-work">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/carousel2.jpeg" class="img" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="title">Putting Women First.</h1>
+            <p>Find out how Elevate Women Period was founded by women for women</p>
+            <p><a class="btn btn-lg btn-primary" href="/about">About Us</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/ReusablePads.jpeg" class="img" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="title">Giving Modern Solutions. </h1>
+            <p>Through our reusable pads, we give young women sustainable solutions for menstrual health </p>
+            <p><a class="btn btn-lg btn-primary" href="/contact"> Get in Touch</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- Elevate Women Intro paragraph-->
+  <div class="title"> Elevate Women. <hr> </div>
+  <div class="paragraph"> According to UNICEF, 76% of girls in both rural and urban schools are unaware of the proper information on menstruation during adolescence. Elevate Women Period is a trust based in Harare, Zimbabwe focusing on the importance of this education. Elevate Women Period is working with schools around Zimbabwe to provide female hygiene and educational supplies for young women in school. At EWP, we believe the menstrual period is a normal part of life for women. Our hope young girls should never be unable to attend school because of lack of sanitary supplies.
+  </div>
+
+{% endblock %}

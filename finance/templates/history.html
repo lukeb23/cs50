@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+History
+{% endblock %}
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start"> Symbol </th>
+            <th class="text-center"> Shares </th>
+            <th class="text-center"> Price</th>
+            <th class="text-end"> Transaction Time </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for transaction in history %}
+        <tr>
+            <td class="text-start"> {{ transaction["symbol"] }} </td>
+            <td class="text-center"> {{ transaction["shares"] }}</td>
+            <td class="text-center"> {{ transaction["price_sold"]|usd }}</td>
+            <td class="text-end"> {{ transaction["time_of_transaction"] }}</td>
+
+        {% endfor %}
+        </tr>
+    </tbody>
+</table>
+
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block main%}
+
+<!-- Main Page Carousel -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/ExampleImage.jpg" class="d-block w-100"alt="">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="title">Example headline.</h1>
+            <p class="paragraph text-start">Some representative placeholder content for the first slide of the carousel.</p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/ExampleImage2.png" class="d-block w-100" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="title">Another example headline.</h1>
+            <p class="paragraph text-start">Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="/our-work">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- Picture with Donate Button  -->
+        <img src="/static/img/ExampleImage3.jpg" class="d-block w-100" alt="...">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="title"> One more for good measure.</h1>
+            <p class="paragraph text-start"> Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#"> Donate Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Elevate Women Intro -->
+  <div class="title"> Elevate Women. <hr> </div>
+  <div class="paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere egestas elit. Nam condimentum tempor aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vulputate ante non nisl bibendum pretium. Duis convallis diam vel tempus vehicula. Maecenas non porttitor justo. Praesent varius dolor sit amet risus tincidunt eleifend. Nullam vel mauris placerat, facilisis magna vitae, blandit magna. Nullam malesuada viverra rhoncus. Pellentesque ligula risus, pretium vitae dolor sed, commodo laoreet elit. Fusce consectetur ante ut tempus bibendum. Nam non erat et turpis mollis pretium in ut mi. Phasellus ut elit libero. Suspendisse fermentum laoreet scelerisque.
+
+    Fusce efficitur libero quis varius faucibus. Vivamus auctor in orci nec semper. Nam eleifend id felis a aliquet. Etiam tincidunt, ante a finibus semper, erat orci gravida tellus, in cursus nulla urna id metus. Nulla eget dolor tempus, fermentum felis non, maximus turpis. Pellentesque tristique dui nec lorem convallis, at malesuada urna ullamcorper. Duis a pharetra erat. Maecenas fringilla metus sed ligula consequat rhoncus. </div>
+
+{% endblock %}
+

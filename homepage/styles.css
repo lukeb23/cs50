@@ -1,0 +1,60 @@
+body {
+    background-color: #bbb8bf;
+    color: #151617;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.carousel-image {
+    width: 90%;
+    height: auto;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.flex-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+h1, h2 {
+    font-weight: 200;
+    font-size: 2em;
+    padding-top: 0.7em;
+}
+#welcome-message {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer {
+    margin-top: auto;
+    background-color:#bbb8bf;
+    justify-content: space-between;
+}
+
+#coding-label {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.email:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+#ye {
+    padding-top: 1.5rem;
+}
+
+#surpriseBtn {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

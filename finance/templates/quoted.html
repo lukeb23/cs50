@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quote
+{% endblock %}
+
+{% block main %}
+
+    <p style="font: times-new-roman"> A share in {{ data["name"] }} ({{ data["symbol"]}} ) costs {{ data["price"]|usd }} </p>
+
+{% endblock %}

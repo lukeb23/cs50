@@ -1,0 +1,18 @@
+sort1 uses: bubble sort
+
+How do you know?: It is not signficantly faster than any during random or reversed, meaning it can't be the merge sort, but it is noticably faster when
+                  the list is sorted, which would indicate an effeciency rate in best case seceneario of (n), the fastest rate of the three.
+
+sort2 uses: merge sort
+
+How do you know?: It is constitently faster than sort 1 and 2 and two for random and reversed, already indicating it is a merge sort, but it also
+                  has consitent numberse between its randoom, reversed, and sorted meaing it has a theta value. The only sort that fills these boxes
+                  is merge sort with a theta value of (n logn).
+
+sort3 uses: selection sort
+
+How do you know?: It has a relatively consitent time value for sorted, reversed, and random, but that consistent time is not lower than the other two
+                  meaning it has a theta value of (n^2).
+
+
+

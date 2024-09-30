@@ -1,0 +1,94 @@
+/* General CSS */
+body {
+    padding-top: 2%;
+    padding-right: 13%;
+    padding-left: 13%;
+    font-family: "Helvetica", Arial, sans-serif;
+    /* background-color:#777 */
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 1.2em;
+    justify-content: center;
+    font-weight: 200;
+    line-height:1.75em;
+}
+
+/* footer */
+.footer-container {
+    display: flex;
+    padding-bottom: 1rem;
+    min-height: 50vh;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Opening Carousel image */
+
+.carousel > .carousel-indicators {
+    padding-bottom: 2em;
+}
+
+.carousel > .carousel-inner {
+    padding-top: .5em;
+    padding-bottom: 2em;
+}
+
+.carousel-inner > img {
+    height: 640px;
+}
+
+/* Align Donate Flexbox */
+.test {
+    padding-top: 10%;
+}
+
+.title {
+    font-size: 1.9rem;
+    font-weight: 525;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.title > hr {
+    width: 25%;
+    border-width: 2px;
+    margin-top: 0.2em;
+
+}
+
+
+.justify-content-center > li {
+    padding: 1rem 1rem;
+
+}
+
+/*  For Contact Page */
+.subheading {
+    font-size: 1.5em;
+    font-weight: 350;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.icon {
+    color: #d91c58;
+}
+
+.icon:hover {
+    width: 1.1em;
+    transition: transform 0.3s;
+    /* same as box shadow hover */
+    color: #ad183b;
+}
+
+.img{
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height:486px;
+    object-fit: cover;
+}
+
+.carousel-item > p, h1{
+    color: red;
+}

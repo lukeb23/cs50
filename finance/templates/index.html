@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+<!-- Table (css via bootstrap and design idea via CS50's finance.net) -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start"> Symbol </th>
+                <th class="text-start"> Name </th>
+                <th class="text-center"> Current Price</th>
+                <th class="text-end"> Shares </th>
+                <th class="text-end"> Total Revenue </th>
+                <th class="text-end"> Total Profit </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in symbol_data %}
+            <tr>
+                <td class="text-start"> {{ data["symbol"] }} </td>
+                <td class="text-start"> {{ data["name"] }}</td>
+                <td class="text-center"> {{ data["current_worth"]|usd }}</td>
+                <td class="text-end"> {{ data["shares"] }}</td>
+                <td class="text-end"> {{ data["currentRevenue"]|usd }}</td>
+                <td class="text-end"> {{ data["totalProfit"]|usd }}</td>
+
+            {% endfor %}
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-start"> TOTALS </td>
+                <td class="border-0 text-end" colspan= "3.5"> {{ total_shares[0]["totalShares"] }} </td>
+                <td class="border-0 text-end"> {{ totalRevenue |usd }} </td>
+                <td class="border-0 text-end"> {{ totalProfit |usd }} </td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan= "2.5"> Cash: </td>
+                <td class="border-0 text-start"> {{ cash |usd }} </td>
+                <td class="border-0 fw-bold text-end" colspan ="1"> Total Cash: </td>
+                <td class="border-0 fw-bold text-start"> {{ total_money|usd }} </td>
+
+            </tr>
+        </tfoot>
+    </table>
+
+
+{% endblock %}
